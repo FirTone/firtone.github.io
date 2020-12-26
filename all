@@ -1,6 +1,6 @@
 #以下命令用于github actions的ubuntu
 
-sudo apt-get screen #安装screen
+sudo apt-get install screen #安装screen
 
 sudo -i
 screen -S code #screen离线也行服务
@@ -15,3 +15,6 @@ git clone https://github.com/open-dingtalk/pierced.git
 cd /root/pierced/linux/
 ./ding -config=./ding.cfg -subdomain=域名 端口
 #钉钉内网穿透(先配置screen并进入再执行)
+
+sudo apt-get install php
+#安装php
