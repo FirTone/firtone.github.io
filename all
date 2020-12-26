@@ -1,0 +1,17 @@
+#以下命令用于github actions的ubuntu
+
+sudo apt-get screen #安装screen
+
+sudo -i
+screen -S code #screen离线也行服务
+wget https://github.com/cdr/code-server/releases/download/v3.8.0/code-server-3.8.0-linux-amd64.tar.gz
+tar xf code-server-3.8.0-linux-amd64.tar.gz
+cd /root/code-server-3.8.0-linux-amd64
+export PASSWORD="1314"
+./code-server --port 1314 --host 0.0.0.0 --auth password #启动code-server 搭建云IDE(就是code-server)
+
+sudo -i
+git clone https://github.com/open-dingtalk/pierced.git
+cd /root/pierced/linux/
+./ding -config=./ding.cfg -subdomain=域名 端口
+#钉钉内网穿透
