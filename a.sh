@@ -6,4 +6,4 @@ unzip ngrok-stable-linux-amd64.zip
 apt-get install screen
 screen -S abc
 cd ../
-ngrok tcp 21
+ngrok tcp 21#bash <(curl -s -L [sh地址])
