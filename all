@@ -14,4 +14,4 @@ sudo -i
 git clone https://github.com/open-dingtalk/pierced.git
 cd /root/pierced/linux/
 ./ding -config=./ding.cfg -subdomain=域名 端口
-#钉钉内网穿透
+#钉钉内网穿透(先配置screen并进入再执行)
